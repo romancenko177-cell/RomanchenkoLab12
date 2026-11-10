@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Команди Git</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <h2>Мій особистий блог</h2>
+        <small>Romanchenko</small>
+    </div>
+
+    <nav>
+        <a href="index.html">Головна</a>
+        <a href="register.html">Реєстрація</a>
+        <a href="git_commands.html">Команди Git</a>
+    </nav>
+</header>
+
+<main class="commands">
+
+    <h1>Основні команди Git</h1>
+
+    <section>
+        <h2>Create a Repository</h2>
+        <p>Створення нового репозиторію:</p>
+        <pre>git init [project name]</pre>
+
+        <p>Клонування існуючого репозиторію:</p>
+        <pre>git clone my_url</pre>
+    </section>
+
+    <section>
+        <h2>Observe your Repository</h2>
+        <pre>git status</pre>
+        <pre>git diff</pre>
+        <pre>git diff --cached</pre>
+        <pre>git diff HEAD</pre>
+        <pre>git diff commit1 commit2</pre>
+        <pre>git blame [file]</pre>
+        <pre>git show [commit]:[file]</pre>
+        <pre>git log</pre>
+        <pre>git log -p [file/directory]</pre>
+    </section>
+
+    <section>
+        <h2>Working with Branches</h2>
+        <pre>git branch</pre>
+        <pre>git branch -av</pre>
+        <pre>git checkout my_branch</pre>
+        <pre>git branch new_branch</pre>
+        <pre>git branch -d my_branch</pre>
+        <pre>git checkout -b my_branch</pre>
+        <pre>git merge branch_a</pre>
+        <pre>git checkout b</pre>
+        <pre>git tag my_tag</pre>
+    </section>
+
+    <section>
+        <h2>Make a change</h2>
+        <pre>git add [file]</pre>
+        <pre>git add .</pre>
+        <pre>git commit -m "commit message"</pre>
+        <pre>git commit -am "commit message"</pre>
+        <pre>git reset [file]</pre>
+        <pre>git reset --hard</pre>
+    </section>
+
+    <section>
+        <h2>Synchronize</h2>
+        <pre>git fetch</pre>
+        <pre>git pull</pre>
+        <pre>git pull --rebase</pre>
+        <pre>git push</pre>
+    </section>
+
+    <section>
+        <h2>Finally!</h2>
+        <pre>git command --help</pre>
+        <p>Офіційна документація:
+            <a href="https://training.github.com/" target="_blank">
+                GitHub Training
+            </a>
+        </p>
+    </section>
+
+</main>
+
+<footer>
+    <p>© Всі права захищені.</p>
+    <p>Розробник: Romanchenko.</p>
+</footer>
+
+</body>
+</html>
