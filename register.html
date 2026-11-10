@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Реєстрація користувача</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <h2>Мій особистий блог</h2>
+        <small>Romanchenko</small>
+    </div>
+
+    <nav>
+        <a href="index.html">Вхід</a>
+        <a href="register.html">Реєстрація</a>
+    </nav>
+</header>
+
+<main>
+    <form class="register-form" action="#" method="post">
+        <h3>Реєстрація користувача</h3>
+
+        <label for="surname">Прізвище</label>
+        <input type="text" id="surname" name="surname" required>
+
+        <label for="name">Ім'я</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="login">Логін</label>
+        <input type="text" id="login" name="login" required>
+
+        <label for="group">Навчальна група</label>
+        <select id="group" name="group">
+            <option value="281">281</option>
+            <option value="282">282</option>
+            <option value="283">283</option>
+        </select>
+
+        <label for="password">Пароль</label>
+        <input type="password" id="password" name="password" required>
+
+        <label for="confirm">Підтвердження паролю</label>
+        <input type="password" id="confirm" name="confirm" required>
+
+        <button type="submit">Зареєструватися</button>
+    </form>
+</main>
+
+<footer>
+    <p>© Всі права захищені.</p>
+    <p>Розробник: студент навчальної групи 281 Romanchenko.</p>
+</footer>
+
+</body>
+</html>
